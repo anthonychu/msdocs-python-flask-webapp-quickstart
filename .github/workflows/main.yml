@@ -28,6 +28,7 @@ jobs:
       - name: Build and deploy Container App
         uses: azure/container-apps-deploy-action@v0
         with:
+          acrName: ca46d32c227bacr
           appSourcePath: ${{ github.workspace }}
           containerAppName: python-app
           resourceGroup: reddog-20230207
